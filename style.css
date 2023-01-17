@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    background: #333;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* header start */
+
+header {
+    width: 100%;
+    height: 40rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .content {
+    padding: 2rem;
+}
+
+header .content h1 {
+    font-size: 3.4rem;
+}
+
+header .content p {
+    font-size: 1.4rem;
+}
+
+header .content .btn {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background: #333;
+    letter-spacing: 1.5px;
+    transition: all 0.3s;
+}
+
+header .content .btn:hover {
+    background: rgb(167, 165, 165);
+    color: #333;
+    border: 1px solid #333;
+}
+
+
+/* section-a start */
+
+.section-a {
+    padding-bottom: 2.8rem;
+}
+
+.section-a h2 {
+    font-size: 2.6rem;
+    display: block;
+    padding: 2rem 0;
+}
+
+.section-a .box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 1.5rem;
+    margin-top: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.section-a .box:hover {
+    transform: translateY(-5px);
+}
+
+.section-a .box-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-a .box-content .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+    padding: 1.2rem 2rem;
+    margin-top: 1.1rem;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 3rem;
+    letter-spacing: 1.2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-a .box-content .box-text {
+    margin-top: 1.2rem;
+}
+
+.section-a .box-content .btn:hover {
+    background: rgb(167, 165, 165);
+    color: #333;
+    border: 1px solid #333;
+}
+
+.section-a .box img {
+    width: 30rem;
+    margin-right: 1.3rem;
+}
+
+.section-a .box h3 {
+    font-size: 1.8rem;
+}
+
+.section-a .box p {
+    font-size: 1.2rem;
+}
+
+
+/* section-b start */
+
+.section-b .box {
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.section-b .box h2 {
+    font-size: 2rem;
+}
+
+.section-b .box p {
+    font-size: 1.2rem;
+}
+
+.section-b .box:first-child {
+    background: rgb(20, 19, 105);
+}
+
+.section-b .box:last-child {
+    background: rgb(34, 34, 34);
+}
+
+
+/* footer start */
+
+footer {
+    background: #000;
+}
+
+footer p {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .section-a .boxs {
+        display: flex;
+    }
+    .section-a .boxs .box .box-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-a .boxs .box .box-content .box-text {
+        margin-top: 1rem;
+    }
+    .section-b {
+        display: flex;
+        height: 20rem;
+    }
+    .section-b .box p {
+        line-height: 2;
+        margin-top: 1.1rem;
+    }
+}
